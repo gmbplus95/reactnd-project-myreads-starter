@@ -41,7 +41,7 @@ export default function BookShelfChanger(props) {
     return (
         <div className="book-shelf-changer">
             <select onChange={handleSelect} value={selected} title={selected}>
-                {options.filter(j => !j.invisible).map((item, idx) => {
+                {options.map((item, idx) => {
                     return (
                         <option disabled={item.val === ""} value={item.val}
                                 key={bookId + idx}>
